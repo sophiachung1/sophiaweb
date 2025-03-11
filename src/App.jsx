@@ -8,7 +8,7 @@ import './style.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/sophiaweb">
     <nav id="desktop-nav">
       <div className="logo">Sophia Chung</div>
       <ul className="nav-links">
