@@ -1,0 +1,202 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+a, 
+.btn {
+    transition: all 300ms ease;
+}
+
+nav, 
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 30px;
+    background-color: pink;
+}
+
+.logo{
+    float: left;
+    font-size: 24px;
+}
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav{
+    display: none;
+}
+
+.hamburger-menu{
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+/*profile section*/ 
+
+#profile {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Pushes children to the edges */
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 20px; /* Adds some spacing */
+    width: 100%; /* Ensures the section spans the full width */
+    box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.text-container {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column; /* Stacks text and buttons vertically */
+    gap: 20px; /* Adds spacing between text and buttons */
+}
+
+.section__pic-container{
+    flex: 0 0 auto;
+/* flex-shrink: 0;
+margin: auto 0; */
+
+}
+
+
+.profile{width: 100%;
+    max-width: 524px;
+    height: auto;
+    /* margin: auto 0;
+    flex: 0 0 auto; */
+   }
+
+   .hello{
+    margin-left: 50px;
+    border-radius: 10px;
+    background: #FFDDBF; 
+    display: flex;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 150px;
+   }
+
+.welcome_text{
+            
+            font-size: 24px;
+            
+
+}
+
+.section__text{font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 80px;
+    margin-left: 50px;
+    justify-content: space-between;
+   
+    }
+
+    .button-container {
+        display: flex; /* Enables flexbox for horizontal alignment */
+        gap: 10px; /* Adds space between the buttons */
+        margin-left: 50px; /* Matches alignment with the text */
+    }
+.button1{
+    background-color: #4E5E80;
+    color: white;
+    width: 270px;
+    align-items: center;
+    padding: 24px 40px;
+    border-radius: 16px;
+    
+}
+
+.button2{
+    background-color: transparent;
+    color: #4E5E80;
+    width: 270px;
+    align-items: center;
+    padding: 24px 40px;  
+    border-radius: 16px;
+    border: 3px solid #4D5566;
+}
+.button1, .button2 {
+    display: inline-flex; /* Ensures the buttons align properly */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+}
+
+.work-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.work-gallery{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.work-img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
