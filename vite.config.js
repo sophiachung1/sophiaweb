@@ -5,5 +5,5 @@ export default {
   build: {
     outDir: 'dist', // this specifies the output directory as 'dist'
   },
-  base: "/sophiaweb",
+  base: "/sophiaweb/",
 };
